@@ -157,10 +157,10 @@ Tenemos diferentes puntos para la lista desordenada en Markdown desde un "*" (as
 + Tercer punto de la lista
 
 ## Enlaces
-Para crear un enlace tenemos que realizar la siguiente estructura: "[textoclicable](URL "Titulo opcional")"
+Para crear un enlace tenemos que realizar la siguiente estructura: "["textoclicable" ]"(URL "Titulo opcional")" (sin comillas)
 **Resultado:**[Página repositorio GitHub](https://github.com/paulamoreno27/2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula "Link GitHub Paula")
 
 ## Imagenes
-Para insertar una imagen en Markdown debemos debemos de descargar la imagen primero de todo y colocarla en la carpeta donde se encuetra el archivo README.md, una vez la tenemos en la carpeta, lo que deberemos de hacer es  irnos a GitHub web y pegar la URL donde se encuentra la imagen. Luego debemos de escribir la siguiente ruta en nuestro archivo README.md "![TextoAlternativo](UbicaciónDeLaImagen "Titulo opcional")"
+Para insertar una imagen en Markdown debemos debemos de descargar la imagen primero de todo y colocarla en la carpeta donde se encuetra el archivo README.md, una vez la tenemos en la carpeta, lo que deberemos de hacer es  irnos a GitHub web y pegar la URL donde se encuentra la imagen. Luego debemos de escribir la siguiente ruta en nuestro archivo README.md "!"[" TextoAlternativo "]"(UbicaciónDeLaImagen "Titulo opcional")" (sin comillas)
 **Resultado:**
 ![Foto GitHub](https://github.com/paulamoreno27/ASIX1_AprendizajeMarkdown/blob/main/gatofresa.jpg "Foto GitHub")
