@@ -177,9 +177,9 @@ Para hacer una tabla en Markdown debemos de hacer lo siguiente:
 * No es necesario que estén alineadas verticalmente. Solo a nivel visual para claridad del código.
 * Se han de poner al menos tres guiones para separar cada encabezado (los guiones son los "-")
 
-* **Resultado:**
-* |Titulo 1|Titulo 2|Titulo 3|
+### Resultado:
+|Titulo 1|Titulo 2|Titulo 3|
 |---------|:-----------:|----------------:|
 |SMX2 |Curso 2324|25|
 |ASIX1|Curso 2425|33| 
-|DAW2|Curso 2425|32|
+|**DAW2**|Curso 2425|32|
