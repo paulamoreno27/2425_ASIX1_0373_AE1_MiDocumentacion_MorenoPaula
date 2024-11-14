@@ -69,23 +69,89 @@ También tenemos estilos que se anidan, como por ejemplo:
 
 ### Estilo *ítalica* o _cursiva_:
 * Para poner el estilo *ítalica* o _cursiva_ utilizaremos o " * " (asterisco) o " _ " (barrabaja) utilizemos el que sea de los dos ya que obtendemos el mismo resultado, lo unico que deberemos de hacer es poner " * " (asterisco) o " _ " (barrabaja) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otro * (asterisco) o _ (barrabaja), dependiendo que hemos usado. Si usamos asterisco, pondremos uno al principio y uno al final y si hemos usado barrabaja pues al principio y al final.
-**Ejemplo:** "* ítaliza/cursiva *", " _ítalica/cursiva _ "
-**Resultado:** *Ítaliza/Cursiva*, _Ítalica/Cursiva_
+* **Ejemplo:** "* ítaliza/cursiva *", " _ítalica/cursiva _ "
+* **Resultado:** *Ítaliza/Cursiva*, _Ítalica/Cursiva_
 
 
 ### Estilo **negrita**:
 * Para poner el estilo **negrita** utilizaremos dos " * " (asteriscos), lo que deberemos de hacer para que nuestra letra o frase se vea en negrita es poner " ** " (asteriscos) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otros dos " ** " (asteriscos).
-**Ejemplo:** "** Negrita **"
-**Resultado:** **Negrita**
+* **Ejemplo:** "** Negrita **"
+* **Resultado:** **Negrita**
 
 
 ### Estilo ~~tachado~~:
 * Para poner el estilo ~~tachado~~ utilizaremos dos "~" (virgulillas, se encuentra haciendo "alt gr + num 2/3/4"), lo que deberemos de hacer para que nuestra letra o frase se vea tachada es poner dos "~ ~" (virguelillas) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otras dos "~ ~" (virguelillas).
-**Ejemplo:** "~ ~ Tachada ~ ~" (las virguelillas van juntas sin espacio)
-**Resultado:** ~~Tachada~~
+* **Ejemplo:** "~ ~ Tachada ~ ~" (las virguelillas van juntas sin espacio)
+* **Resultado:** ~~Tachada~~
 
 
 ### Estilo anidado **palabra1 _palabra2_**:
 * Por ultimo para hacer el estilo anidado **palabra1 _palabra2_** lo que debemos de hacer es utilizar el "*" y la "_", primero colocaremos dos " * " (asteriscos) la frase o palabra que queremos, una " _ " (barrabaja) la siguiente frase o palabra y finalizamos con una " _ " (barrabaja) y dos " * " (asteriscos). Si hacemos esto la primera palabra nos quedara en negrita y la siguiente en negrita y cursiva.
 * **Ejemplo:**  "* * palabra1 _ palabra2 _ * *" (tanto los asteriscos como las barrabajas van pegadas a la palabra)
-**Resultado:** **palabra1 _palabra2_**
+* **Resultado:** **palabra1 _palabra2_**
+
+
+## Listas
+### Como hacer una lista ordenada:
+Para crear una lista numerada en Markdown como esta:
+1. Primer punto de la lista
+2. Segundo punto de la lista
+3. Tercer punto de la lista
+
+Lo unico que deberemos de hacer es poner "1.", esapcio y lo que queramos escribir, al hacer enter nos pasara al siguiente punto de la lista lo cual ya se pondra automaticamente el siguiente punto que seria "2.", es importante despues de poner el "1." poner el espacio, ya que si no, no se ejecutará. 
+
+**Ejemplo:** " 1. Punto uno de la lista "
+**Resultado:**
+1. Punto uno de la lista
+
+
+### Como hacer una lista con subpuntos:
+En caso que queramos crear una lista con subpuntos como esta:
+1. Primer punto de la lista
+    1. Primer elemento de la sublista 1
+    2. Segundo elemento de la sublista 1
+2. Segundo punto de la lista
+    * Primer elemento de la sublista 2
+    * Segundo elemento de la sublista 2
+3. Tercer punto de la lista
+
+Lo que debemos de hacer es hacer una lista normal, como la anterior pero cuando queramos poner un subpunto lo que haremos sera, tabulador, y entonces nos aparecera un subpunto con otro "1.", si no queremos poner el "1." podemos cambiarlo por "*", "-", "+".
+**Ejemplo:** 
+" 1. Punto uno de la lista "
+    " 1. Subpunto de la lista "
+
+" 1. Punto uno de la lista "
+    " * Subpunto de la lista "
+
+" 1. Punto uno de la lista "
+    " - Subpunto de la lista "
+
+" 1. Punto uno de la lista "
+    " + Subpunto de la lista "
+
+**Resultado:**
+1. Punto uno de la lista
+   1. subpunto de la lista
+
+1. Punto uno de la lista
+   * subpunto de la lista
+
+1. Punto uno de la lista
+   - subpunto de la lista
+
+1. Punto uno de la lista
+   + subpunto de la lista
+
+### Como hacer una lista desordenada:
+Tenemos diferentes puntos para la lista desordenada en Markdown desde un "*" (asterisco), "-" (guion) y incluso "+" (más), para utilizar estos puntos solo tenemos que poner " * ", " - ", " + ", un espacio y lo que queramos poner.
+
+**Ejemplo:**
+" * Primer punto de la lista "
+" - Segundo punto de la lista "
+" + Tercer punto de la lista "
+
+**Resultado:**
+* Primer punto de la lista
+- Segundo punto de la lista
++ Tercer punto de la lista
+
