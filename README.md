@@ -101,19 +101,20 @@ Para crear una lista numerada en Markdown como esta:
 Lo unico que deberemos de hacer es poner "1.", esapcio y lo que queramos escribir, al hacer enter nos pasara al siguiente punto de la lista lo cual ya se pondra automaticamente el siguiente punto que seria "2.", es importante despues de poner el "1." poner el espacio, ya que si no, no se ejecutará. 
 
 **Ejemplo:** " 1. Punto uno de la lista "
+
 **Resultado:**
 1. Punto uno de la lista
 
 
 ### Como hacer una lista con subpuntos:
 En caso que queramos crear una lista con subpuntos como esta:
-1. Primer punto de la lista
+* 1. Primer punto de la lista
     1. Primer elemento de la sublista 1
     2. Segundo elemento de la sublista 1
-2. Segundo punto de la lista
+* 2. Segundo punto de la lista
     * Primer elemento de la sublista 2
     * Segundo elemento de la sublista 2
-3. Tercer punto de la lista
+* 3. Tercer punto de la lista
 
 Lo que debemos de hacer es hacer una lista normal, como la anterior pero cuando queramos poner un subpunto lo que haremos sera, tabulador, y entonces nos aparecera un subpunto con otro "1.", si no queremos poner el "1." podemos cambiarlo por "*", "-", "+".
 **Ejemplo:** 
@@ -155,3 +156,11 @@ Tenemos diferentes puntos para la lista desordenada en Markdown desde un "*" (as
 - Segundo punto de la lista
 + Tercer punto de la lista
 
+## Enlaces
+Para crear un enlace tenemos que realizar la siguiente estructura: "[textoclicable](URL "Titulo opcional")"
+**Resultado:**[Página repositorio GitHub](https://github.com/paulamoreno27/2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula "Link GitHub Paula")
+
+## Imagenes
+Para insertar una imagen en Markdown debemos debemos de descargar la imagen primero de todo y colocarla en la carpeta donde se encuetra el archivo README.md, una vez la tenemos en la carpeta, lo que deberemos de hacer es  irnos a GitHub web y pegar la URL donde se encuentra la imagen. Luego debemos de escribir la siguiente ruta en nuestro archivo README.md "![TextoAlternativo](UbicaciónDeLaImagen "Titulo opcional")"
+**Resultado:**
+![Foto GitHub](https://github.com/paulamoreno27/ASIX1_AprendizajeMarkdown/blob/main/gatofresa.jpg "Foto GitHub")
