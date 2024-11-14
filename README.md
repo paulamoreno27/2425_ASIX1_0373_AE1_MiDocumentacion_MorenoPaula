@@ -14,3 +14,42 @@
 * git remote add origin "url" --> sincroniza el repositorio local con el web
 
 * git pull --> Coger los cambios del GitHub web y pasarlos al repositorio local
+
+## Apuntes Markdown:
+### Encabezados:
+Tenemos encabezados de diferentes tamaños, para hacerlos utilizamos el "#" contra más "#" pongamos más pequeño se vuelve.
+* Para hacer un encabezado de **primer nivel** deberemos de poner un unico "#", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"# ENCABEZADO DE PRIMER NIVEL"
+**Asi quedaria:** 
+# ENCABEZADO DE PRIMER NIVEL
+
+* Para hacer un encabezado de **segundo nivel** deberemos de poner dos "#", es decir lo que tendriamos que hacer es, "##", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"## ENCABEZADO DE SEGUNDO NIVEL"
+**Asi quedaria:** 
+## ENCABEZADO DE SEGUNDO NIVEL
+
+* Para hacer un encabezado de **tercer nivel** deberemos de poner tres "#", es decir lo que tendriamos que hacer es, "###", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"### ENCABEZADO DE TERCER NIVEL"
+**Asi quedaria:** 
+### ENCABEZADO DE TERCER NIVEL
+
+* Para hacer un encabezado de **cuarto nivel** deberemos de poner cuatro "#", es decir lo que tendriamos que hacer es, "####", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"#### ENCABEZADO DE CUARTO NIVEL"
+**Asi quedaria:** 
+#### ENCABEZADO DE CUARTO NIVEL
+
+* Para hacer un encabezado de **quinto nivel** deberemos de poner cinco "#", es decir lo que tendriamos que hacer es, "#####", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"##### ENCABEZADO DE QUINTO NIVEL"
+**Asi quedaria:** 
+##### ENCABEZADO DE QUINTO NIVEL
+
+* Por ultimo para hacer un encabezado de **sexto nivel** deberemos de poner seis "#", es decir lo que tendriamos que hacer es, "######", un espacio y a continuación el encabezado que deseamos. 
+**Ejemplo:** 
+"###### ENCABEZADO DE SEXTO NIVEL"
+**Asi quedaria:** 
+###### ENCABEZADO DE SEXTO NIVEL
