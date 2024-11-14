@@ -66,18 +66,26 @@ En Markdown tenemos diferentes estilos de letra como:
 También tenemos estilos que se anidan, como por ejemplo:
 * **palabra1 _palabra2_** (itálicas pero la segunda además negrita)
 
+
+### Estilo *ítalica* o _cursiva_:
 * Para poner el estilo *ítalica* o _cursiva_ utilizaremos o " * " (asterisco) o " _ " (barrabaja) utilizemos el que sea de los dos ya que obtendemos el mismo resultado, lo unico que deberemos de hacer es poner " * " (asterisco) o " _ " (barrabaja) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otro * (asterisco) o _ (barrabaja), dependiendo que hemos usado. Si usamos asterisco, pondremos uno al principio y uno al final y si hemos usado barrabaja pues al principio y al final.
 **Ejemplo:** "* ítaliza/cursiva *", " _ítalica/cursiva _ "
 **Resultado:** *Ítaliza/Cursiva*, _Ítalica/Cursiva_
 
-* Para poner el estilo **negrita** utilizaremos " * " (asterisco), lo que deberemos de hacer para que nuestra letra o frase se vea en negrita es poner " * " (asterisco) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otro " * " (asterisco).
+
+### Estilo **negrita**:
+* Para poner el estilo **negrita** utilizaremos dos " * " (asteriscos), lo que deberemos de hacer para que nuestra letra o frase se vea en negrita es poner " ** " (asteriscos) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otros dos " ** " (asteriscos).
 **Ejemplo:** "** Negrita **"
 **Resultado:** **Negrita**
 
-* Para poner el estilo ~~tachado~~ utilizaremos "~" (virgulilla, se encuentra haciendo "alt gr + num 2/3/4"), lo que deberemos de hacer para que nuestra letra o frase se vea tachada es poner "~" (virguelilla) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otra "~" (virguelilla).
+
+### Estilo ~~tachado~~:
+* Para poner el estilo ~~tachado~~ utilizaremos dos "~" (virgulillas, se encuentra haciendo "alt gr + num 2/3/4"), lo que deberemos de hacer para que nuestra letra o frase se vea tachada es poner dos "~ ~" (virguelillas) al inicio de la palabra o frase, escribiremos lo que queremos y al finalizar colocaremos otras dos "~ ~" (virguelillas).
 **Ejemplo:** "~ ~ Tachada ~ ~" (las virguelillas van juntas sin espacio)
 **Resultado:** ~~Tachada~~
 
+
+### Estilo anidado **palabra1 _palabra2_**:
 * Por ultimo para hacer el estilo anidado **palabra1 _palabra2_** lo que debemos de hacer es utilizar el "*" y la "_", primero colocaremos dos " * " (asteriscos) la frase o palabra que queremos, una " _ " (barrabaja) la siguiente frase o palabra y finalizamos con una " _ " (barrabaja) y dos " * " (asteriscos). Si hacemos esto la primera palabra nos quedara en negrita y la siguiente en negrita y cursiva.
 * **Ejemplo:**  "* * palabra1 _ palabra2 _ * *" (tanto los asteriscos como las barrabajas van pegadas a la palabra)
 **Resultado:** **palabra1 _palabra2_**
