@@ -178,7 +178,7 @@ Para hacer una tabla en Markdown debemos de hacer lo siguiente:
 * Se han de poner al menos tres guiones para separar cada encabezado (los guiones son los "-")
 
 * **Resultado:**
-|Titulo 1|Titulo 2|Titulo 3|
+* |Titulo 1|Titulo 2|Titulo 3|
 |---------|:-----------:|----------------:|
 |SMX2 |Curso 2324|25|
 |ASIX1|Curso 2425|33| 
