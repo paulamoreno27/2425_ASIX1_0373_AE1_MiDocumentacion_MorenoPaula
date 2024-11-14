@@ -164,3 +164,22 @@ Para crear un enlace tenemos que realizar la siguiente estructura: "["textoclica
 Para insertar una imagen en Markdown debemos debemos de descargar la imagen primero de todo y colocarla en la carpeta donde se encuetra el archivo README.md, una vez la tenemos en la carpeta, lo que deberemos de hacer es  irnos a GitHub web y pegar la URL donde se encuentra la imagen. Luego debemos de escribir la siguiente ruta en nuestro archivo README.md "!"[" TextoAlternativo "]"(UbicaciónDeLaImagen "Titulo opcional")" (sin comillas)
 * **Resultado:**
 ![Foto GitHub](https://github.com/paulamoreno27/2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula/blob/main/imagengithub.png "Foto GitHub")
+
+## Tablas
+Para hacer una tabla en Markdown debemos de hacer lo siguiente:
+* "|Titulo 1|Titulo 2|Titulo 3|
+   |---------|**:**-----------**:**|----------------**:**|
+   |SMX2 |Curso 2324|25|
+   |ASIX1|Curso 2425|33| 
+   |DAW2|Curso 2425|32|
+
+* Los dos puntos resaltados en negrita se usan para alinear las columnas (izquierda, centrado, derecha).
+* No es necesario que estén alineadas verticalmente. Solo a nivel visual para claridad del código.
+* Se han de poner al menos tres guiones para separar cada encabezado (los guiones son los "-")
+
+* **Resultado:**
+|Titulo 1|Titulo 2|Titulo 3|
+|---------|:-----------:|----------------:|
+|SMX2 |Curso 2324|25|
+|ASIX1|Curso 2425|33| 
+|DAW2|Curso 2425|32|
