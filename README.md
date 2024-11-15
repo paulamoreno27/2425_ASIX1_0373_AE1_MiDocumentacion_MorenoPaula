@@ -209,10 +209,11 @@ No todas las etiquetas de HTML se **abren** y se **cierran**, algunas solo se ab
 
 ### 3.1.3 Atributos en HTML:
 El atributo siempre ira en la etiqueta de abertura, es donde pondremos los parámetros, el nombre del atributo ira seguido por un signo (=) y comillas de apertura y cierre esperando el valor del atributo.
-* **Ejemplo:**  " <a href="URL">Texto opcional</a> " Estariamos indicando el enlace a donde desamos con el "URL" y en "Texto opcional" podriamos poner algo para que haga referencia al enlace.
+* **Ejemplo:**   " <"a href="URL">Texto opcional<"/a"> " Estariamos indicando el enlace a donde desamos con el "URL" y en "Texto opcional" podriamos poner algo para que haga referencia al enlace.
 
 ## 3.2 Estructura básica de un HTML:
 Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentro de este un head y body. Aqui podemos ver un ejemplo de una estructura básica de HTML:
+````
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -224,15 +225,18 @@ Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentr
     
 </body>
 </html>
-
+````
 #### Explicación de cada etiqueta:
-* DOCTYPE: Especifica que tipo de documento es.
-* <html lang="en">: Raíz del documento HTML en este caso. y el "lang=en" hace referencia a que el idioma principal del documento es inglés.
-* <head>: Contiene metadatos del documento HTML, como titulos, estilos, etc. Estos no se ven en la página como tal.
-    - <meta charset="UTF-8">: Define codificación de caracteres como UTF-8, que este es compatible con la gran mayoria de idomas y caracteres especiales.
-    -  <meta name="viewport" content="width=device-width, initial-scale=1.0">: Este define que la página se adapte a diferentes tamaños de pantalla como por ejemplo móviles.
-    -  <width=device-width>: Configura el ancho del contenido para que corresponda al ancho de la pantalla.
-    -  <initial-scale=1.0>: Establece un nivel de zoom inicial.
-    - <title>Document</title>: Define el titulo de la página que aparece en la pestaña del navegador.
-* <body>: Contiene el contenido visible de la página web, ya sea imagenes, videos, links, etc.
-* </html>, </head>,</body>: Indican el fin de cada elemento, sin estos cierres el documento seria invalido.
+* **DOCTYPE**: Especifica que tipo de documento es.
+* **html lang="en"**: Raíz del documento HTML en este caso. y el "lang=en" hace referencia a que el idioma principal del documento es inglés.
+
+* **head**:
+ Contiene metadatos del documento HTML, como titulos, estilos, etc. Estos no se ven en la página como tal.
+
+* **meta charset="UTF-8"**: Define codificación de caracteres como UTF-8, que este es compatible con la gran mayoria de idomas y caracteres especiales.
+
+* **titleDocument/title**: Define el titulo de la página que aparece en la pestaña del navegador.
+
+* **body**: Contiene el contenido visible de la página web, ya sea imagenes, videos, links, etc.
+
+* **/html, /head,/body**: Indican el fin de cada elemento, sin estos cierres el documento seria invalido.
