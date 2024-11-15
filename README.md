@@ -240,3 +240,45 @@ Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentr
 * **body**: Contiene el contenido visible de la página web, ya sea imagenes, videos, links, etc.
 
 * **/html, /head,/body**: Indican el fin de cada elemento, sin estos cierres el documento seria invalido.
+
+## 3.3 Elementos de bloque y línea de un HTML:
+### 3.3.1 Elementos de bloque (block elements):
+Los elementos de bloque son grandes estructuras las cuales contienen otros elementos de bloque, como elementos de línea o texto. Suelen ser títulos, párrafos o listas o tablas.
+* **Ejemplos:** <"h1/h6"> (encabezados), <"p"> (párrafo), <"br"> (salto de línea), <"hr"> (separador), <"div"> (división).
+
+### 3.3.2 Elementos de línea (inline elements):
+Los elementos de línea son aquellos que se representan en pequeñas o describen pequeños trozos de texto o datos, los cuales pueden contener solo texto o otros elementos de línea. Como pueden ser hipervinculos, citas o imagenes.
+* **Ejemplos:** <"strong"> (fuerte negrita), <"span"> (rango).
+
+## 3.4 Etiquetas básicas de HTML:
+* **Encabezados:** (h1 al h2) --> Estos permiten especificar ciertas partes del contenido, son encabezados o subencabezados del contenido. **(Elementos de bloque).**
+
+* **Párrafos:** (<``p````>) --> Este se utiliza para encerrar párrafos de texto. **(Elemento de bloque).**
+
+* **Salto de línea:** (<``br````>) --> Permite agregar salto de línea entre párrafos.
+
+* **Separador de línea:** (<``hr````>) --> Permite agregar una línea horizontal divisora.
+
+* **Énfasis:** (<`strong``>) --> Sirve para cuando queremos destacar o dar énfasis a una parte del texto.
+
+* **<```span````>:** Contenedor en línea para agrupar pequeña parte del texto o contenido dentro de una linea, sin romper el flujo de texto.
+
+
+### 3.4.1 Listas:
+* Listas desordenadas con HTML son aquellas que los items no tienen un orden relevante, como una lista de compras, para estas se utiliza el elemento "ul" (unordered list).
+* **Tipos de listas desordenadas:**
+  ```
+    <ul type=DISC> aparecerá un circulo pintado
+    <ul type=SQUARE> aparecerá un cuadrado
+    <ul type=CIRCLE> aparecerá un circulo sin pintar
+  ```
+  
+* Por otro lado tenemos las listas ordenadas, que son las cuales el orden es revelante, com en una receta. Estas son representadas con "ol" (ordered list).
+* **Tipos de listas desordenadas:**
+    ```
+    <ol type=A> aparecerá letra mayuscula
+    <ol type=a> aparecerá letra minuscula
+    <ol type=1> aparecerá número.
+    ```
+
+
