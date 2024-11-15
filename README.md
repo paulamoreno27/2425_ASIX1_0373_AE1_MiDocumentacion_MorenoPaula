@@ -302,6 +302,16 @@ con el atributo **"src"** el cual se encarga de indicar la ruta de la imagen que
 <img src=fotogithub.png alt="Foto GitHub" width="50" height="50">
 ```
 ## 3.7 Enlaces en HTML:
+En HTML también tenemos enlaces para poder poner links o enlaces, para ello hacemos uso de la etiqueta 
+```
+<a></a>
+```
+a más a más del atributo **"href"** el cual  indica la direccion del enlace. 
+* **Ejemplo del enlace:**
+```
+<a href="https://login.net.fje.edu/">Enlace a la net</a>
+```
 
 ## 3.8 Validador de HTML:
-
+En HTML, tenemos un validador externo para poder validar nuestros códigos HTML, para asi poder resolver o modificar los errores que tengamos en nuestro código. El validador se llama **W3C**
+ <a href="https://validator.w3.org/">Enlace a W3C</a>
