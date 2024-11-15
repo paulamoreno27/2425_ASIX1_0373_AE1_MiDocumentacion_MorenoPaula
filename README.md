@@ -100,7 +100,7 @@ Para crear una lista numerada en Markdown como esta:
 
 Lo unico que deberemos de hacer es poner "1.", esapcio y lo que queramos escribir, al hacer enter nos pasara al siguiente punto de la lista lo cual ya se pondra automaticamente el siguiente punto que seria "2.", es importante despues de poner el "1." poner el espacio, ya que si no, no se ejecutará. 
 
-**Ejemplo:** " 1. Punto uno de la lista "
+### **Ejemplo:** " 1. Punto uno de la lista "
 
 ### **Resultado:**
 1. Punto uno de la lista
