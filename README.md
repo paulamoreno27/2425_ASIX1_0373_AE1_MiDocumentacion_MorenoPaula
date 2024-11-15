@@ -202,14 +202,21 @@ HTML **(Hypertext Markup lenguaje)** es el lenguaje de marcas estándar para cre
 - **Lenguaje:** HTML es un lenguaje, no quiere decir que sea un lenguaje de programación ya que no tiene estructura de lenguaje de programación, como los bucles, las condiciones, las funciones, etc.
 
 ### 3.1.2 Etiquetas en HTML:
-No todas las etiquetas de HTML se **abren** y se **cierran**, algunas solo se abren, como es el caso de "<img>", "<br>", y "<input>".
+No todas las etiquetas de HTML se **abren** y se **cierran**, algunas solo se abren, como es el caso de 
+```
+"<img>", "<br>", y "<input>".
+```
 * Etiqueta de apertura: **(<)**
 * Etiqueta de cierre **(/>)**
 * El contenido: contenido del elemento, solo es texto.
 
 ### 3.1.3 Atributos en HTML:
 El atributo siempre ira en la etiqueta de abertura, es donde pondremos los parámetros, el nombre del atributo ira seguido por un signo (=) y comillas de apertura y cierre esperando el valor del atributo.
-* **Ejemplo:**   " <"a href="URL">Texto opcional<"/a"> " Estariamos indicando el enlace a donde desamos con el "URL" y en "Texto opcional" podriamos poner algo para que haga referencia al enlace.
+* **Ejemplo:**  
+  ```
+  <a href=URL>Texto opcional</a>  
+  ```
+  Estariamos indicando el enlace a donde desamos con el "URL" y en "Texto opcional" podriamos poner algo para que haga referencia al enlace.
 
 ## 3.2 Estructura básica de un HTML:
 Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentro de este un head y body. Aqui podemos ver un ejemplo de una estructura básica de HTML:
@@ -244,12 +251,18 @@ Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentr
 ## 3.3 Elementos de bloque y línea de un HTML:
 ### 3.3.1 Elementos de bloque (block elements):
 Los elementos de bloque son grandes estructuras las cuales contienen otros elementos de bloque, como elementos de línea o texto. Suelen ser títulos, párrafos o listas o tablas.
-* **Ejemplos:** <"h1/h6"> (encabezados), <"p"> (párrafo), <"br"> (salto de línea), <"hr"> (separador), <"div"> (división).
+* **Ejemplos:** 
+  ```
+  <h1><h6> (encabezados), <p> (párrafo), <br> (salto de línea), <hr> (separador), <div> (división).
+  ```
 
 ### 3.3.2 Elementos de línea (inline elements):
 Los elementos de línea son aquellos que se representan en pequeñas o describen pequeños trozos de texto o datos, los cuales pueden contener solo texto o otros elementos de línea. Como pueden ser hipervinculos, citas o imagenes.
-* **Ejemplos:** <"strong"> (fuerte negrita), <"span"> (rango).
-
+* **Ejemplos:** 
+  ```
+  <strong> (fuerte negrita), <span> (rango).
+  ```
+  
 ## 3.4 Etiquetas básicas de HTML:
 * **Encabezados:** (h1 al h2) --> Estos permiten especificar ciertas partes del contenido, son encabezados o subencabezados del contenido. **(Elementos de bloque).**
 
