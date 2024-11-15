@@ -1,6 +1,7 @@
 # 2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula
 
-## Apuntes Github:
+# 1. Apartado Github:
+### 1.1 Comandos GitHub:
 * git init --> reinicia el repositorio
 
 * git branch -->  crear diferentes ramas de desarrollo que pueden converger en el mismo repositorio
@@ -15,8 +16,8 @@
 
 * git pull --> Coger los cambios del GitHub web y pasarlos al repositorio local
 
-## Apuntes Markdown:
-### Encabezados:
+# 2. Apartado Markdown:
+### 2.1 Encabezados:
 Tenemos encabezados de diferentes tamaños, para hacerlos utilizamos el "#" contra más "#" pongamos más pequeño se vuelve.
 
 # ENCABEZADO DE PRIMER NIVEL (RESULTADO)
@@ -56,7 +57,7 @@ Tenemos encabezados de diferentes tamaños, para hacerlos utilizamos el "#" cont
 **Podemos ver como quedaria arriba de la explicación**
 
 
-## Estilos de letra
+## 2.2 Estilos de letra
 En Markdown tenemos diferentes estilos de letra como:
 * *ítalica* 
 * _cursiva_
@@ -91,8 +92,8 @@ También tenemos estilos que se anidan, como por ejemplo:
 ### **Resultado:** **palabra1 _palabra2_**
 
 
-## Listas
-### Como hacer una lista ordenada:
+## 2.3 Listas
+### 2.3.1 Como hacer una lista ordenada:
 Para crear una lista numerada en Markdown como esta:
 1. Primer punto de la lista
 2. Segundo punto de la lista
@@ -106,7 +107,7 @@ Lo unico que deberemos de hacer es poner "1.", esapcio y lo que queramos escribi
 1. Punto uno de la lista
 
 
-### Como hacer una lista con subpuntos:
+### 2.3.2 Como hacer una lista con subpuntos:
 En caso que queramos crear una lista con subpuntos como esta:
 * 1. Primer punto de la lista
     1. Primer elemento de la sublista 1
@@ -143,7 +144,7 @@ Lo que debemos de hacer es hacer una lista normal, como la anterior pero cuando 
 1. Punto uno de la lista
    + subpunto de la lista
 
-### Como hacer una lista desordenada:
+### 2.3.3 Como hacer una lista desordenada:
 Tenemos diferentes puntos para la lista desordenada en Markdown desde un "*" (asterisco), "-" (guion) y incluso "+" (más), para utilizar estos puntos solo tenemos que poner " * ", " - ", " + ", un espacio y lo que queramos poner.
 
 **Ejemplo:**
@@ -156,16 +157,16 @@ Tenemos diferentes puntos para la lista desordenada en Markdown desde un "*" (as
 - Segundo punto de la lista
 + Tercer punto de la lista
 
-## Enlaces
+## 2.4 Enlaces:
 Para crear un enlace tenemos que realizar la siguiente estructura: "["textoclicable" ]"(URL "Titulo opcional")" (sin comillas)
 ### **Resultado:**[Página repositorio GitHub](https://github.com/paulamoreno27/2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula "Link GitHub Paula")
 
-## Imagenes
+## 2.5 Imagenes:
 Para insertar una imagen en Markdown debemos debemos de descargar la imagen primero de todo y colocarla en la carpeta donde se encuetra el archivo README.md, una vez la tenemos en la carpeta, lo que deberemos de hacer es  irnos a GitHub web y pegar la URL donde se encuentra la imagen. Luego debemos de escribir la siguiente ruta en nuestro archivo README.md "!"[" TextoAlternativo "]"(UbicaciónDeLaImagen "Titulo opcional")" (sin comillas)
 ### **Resultado:**
 ![Foto GitHub](https://github.com/paulamoreno27/2425_ASIX1_0373_AE1_MiDocumentacion_MorenoPaula/blob/main/imagengithub.png "Foto GitHub")
 
-## Tablas
+## 2.6 Tablas:
 Para hacer una tabla en Markdown debemos de hacer lo siguiente:
 * "|Titulo 1|Titulo 2|Titulo 3|
    |---------|**:**-----------**:**|----------------**:**|
@@ -183,3 +184,55 @@ Para hacer una tabla en Markdown debemos de hacer lo siguiente:
 |SMX2 |Curso 2324|25|
 |ASIX1|Curso 2425|33| 
 |DAW2|Curso 2425|32|
+
+# 3. Apartado HTML:
+### 3.1.1 Definición HTML:
+HTML **(Hypertext Markup lenguaje)** es el lenguaje de marcas estándar para crear páginas webs. Es el lenguaje más importante de internet dado que sin HTML no se vería nada en el navegador. El cual fue creado por Tim Berners-Lee
+
+- **HTML:** Define la estructura y contenido (una imagen, lista de elementos, enlaces, etc) de las páginas webs mediante etiquetas, es muy adaptable y tiene una estructura lógica y es muy fácil de entender o interpretar. (DESCRIBE EL CONTENIDO).
+
+- Los elementos HTML son bloques de construcción de las páginas HTML
+
+- Los elementos HTML están delimitados por etiquetas como **<body>**, etc.
+
+- **Hypertext:** Texto que enlaza con otros contenidos
+
+- **MarkUp:** Todas las páginas webs están construidas en base a etiquetas
+
+- **Lenguaje:** HTML es un lenguaje, no quiere decir que sea un lenguaje de programación ya que no tiene estructura de lenguaje de programación, como los bucles, las condiciones, las funciones, etc.
+
+### 3.1.2 Etiquetas en HTML:
+No todas las etiquetas de HTML se **abren** y se **cierran**, algunas solo se abren, como es el caso de "<img>", "<br>", y "<input>".
+* Etiqueta de apertura: **(<)**
+* Etiqueta de cierre **(/>)**
+* El contenido: contenido del elemento, solo es texto.
+
+### 3.1.3 Atributos en HTML:
+El atributo siempre ira en la etiqueta de abertura, es donde pondremos los parámetros, el nombre del atributo ira seguido por un signo (=) y comillas de apertura y cierre esperando el valor del atributo.
+* **Ejemplo:**  " <a href="URL">Texto opcional</a> " Estariamos indicando el enlace a donde desamos con el "URL" y en "Texto opcional" podriamos poner algo para que haga referencia al enlace.
+
+## 3.2 Estructura básica de un HTML:
+Una página HTML básica incluye una declaración DOCTYPE, elemento HTML y dentro de este un head y body. Aqui podemos ver un ejemplo de una estructura básica de HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+#### Explicación de cada etiqueta:
+* DOCTYPE: Especifica que tipo de documento es.
+* <html lang="en">: Raíz del documento HTML en este caso. y el "lang=en" hace referencia a que el idioma principal del documento es inglés.
+* <head>: Contiene metadatos del documento HTML, como titulos, estilos, etc. Estos no se ven en la página como tal.
+    - <meta charset="UTF-8">: Define codificación de caracteres como UTF-8, que este es compatible con la gran mayoria de idomas y caracteres especiales.
+    -  <meta name="viewport" content="width=device-width, initial-scale=1.0">: Este define que la página se adapte a diferentes tamaños de pantalla como por ejemplo móviles.
+    -  <width=device-width>: Configura el ancho del contenido para que corresponda al ancho de la pantalla.
+    -  <initial-scale=1.0>: Establece un nivel de zoom inicial.
+    - <title>Document</title>: Define el titulo de la página que aparece en la pestaña del navegador.
+* <body>: Contiene el contenido visible de la página web, ya sea imagenes, videos, links, etc.
+* </html>, </head>,</body>: Indican el fin de cada elemento, sin estos cierres el documento seria invalido.
