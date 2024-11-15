@@ -281,4 +281,27 @@ Los elementos de línea son aquellos que se representan en pequeñas o describen
     <ol type=1> aparecerá número.
     ```
 
+## 3.5 Rutas en HTML:
+En HTML utilizamos rutas para enlazar o indicar imagenes o enlaces. Para realizar estas rutas tenemos dos opciones o bien en **ruta absoluta** o **ruta relativa**.
+### 3.5.1 Ruta absoluta:
+- Una ruta absoluta es aquella que especifica exactamente la "ubicacion" de la imagen o de en enlace. Este seria un ejemplo:
+  ```
+  <img src=https://eu01.edcwb.com/buscador/img/centros/logogrande/51132-606ae6bc24374b968a4756cc0b7e2dae.png alt="Foto de ejemplo">
+  ```
+### 3.5.2 Ruta relativa:
+- La ruta relativa lo que hace es especificar la "ubicacion" del archivo o imagen que se encuentra relacionado con el archivo actual. Este es util cuando los archivos están dentro de la misma estructura de carpetas.
+  
+## 3.6 Imagenes en HTML:
+En HTML también se pueden insertar imagenes, para ellos utilizaremos la etiqueta 
+```
+<img>
+``` 
+con el atributo **"src"** el cual se encarga de indicar la ruta de la imagen que deseamos "enlazar", por otro lado podemos añadir otros elementos como **"alt"**: para poner un texto opcional y **width**, **height** para modificar el tamaño de la imagen. 
+* **Ejemplo de la ruta de una imagen**:
+```
+<img src=fotogithub.png alt="Foto GitHub" width="50" height="50">
+```
+## 3.7 Enlaces en HTML:
+
+## 3.8 Validador de HTML:
 
