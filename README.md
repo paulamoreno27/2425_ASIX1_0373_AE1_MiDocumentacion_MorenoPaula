@@ -253,27 +253,27 @@ Los elementos de línea son aquellos que se representan en pequeñas o describen
 ## 3.4 Etiquetas básicas de HTML:
 * **Encabezados:** (h1 al h2) --> Estos permiten especificar ciertas partes del contenido, son encabezados o subencabezados del contenido. **(Elementos de bloque).**
 
-* **Párrafos:** (<``p````>) --> Este se utiliza para encerrar párrafos de texto. **(Elemento de bloque).**
+* **Párrafos:** (p) --> Este se utiliza para encerrar párrafos de texto. **(Elemento de bloque).**
 
-* **Salto de línea:** (<``br````>) --> Permite agregar salto de línea entre párrafos.
+* **Salto de línea:** (br) --> Permite agregar salto de línea entre párrafos.
 
-* **Separador de línea:** (<``hr````>) --> Permite agregar una línea horizontal divisora.
+* **Separador de línea:** (br>) --> Permite agregar una línea horizontal divisora.
 
-* **Énfasis:** (<`strong``>) --> Sirve para cuando queremos destacar o dar énfasis a una parte del texto.
+* **Énfasis:** (strong) --> Sirve para cuando queremos destacar o dar énfasis a una parte del texto.
 
-* **<```span````>:** Contenedor en línea para agrupar pequeña parte del texto o contenido dentro de una linea, sin romper el flujo de texto.
+* **(span):** Contenedor en línea para agrupar pequeña parte del texto o contenido dentro de una linea, sin romper el flujo de texto.
 
 
 ### 3.4.1 Listas:
-* Listas desordenadas con HTML son aquellas que los items no tienen un orden relevante, como una lista de compras, para estas se utiliza el elemento "ul" (unordered list).
+* Listas desordenadas con HTML son aquellas que los items no tienen un orden relevante, como una lista de compras, para estas se utiliza el elemento **"ul"**(unordered list).
 * **Tipos de listas desordenadas:**
   ```
     <ul type=DISC> aparecerá un circulo pintado
     <ul type=SQUARE> aparecerá un cuadrado
     <ul type=CIRCLE> aparecerá un circulo sin pintar
   ```
-  
-* Por otro lado tenemos las listas ordenadas, que son las cuales el orden es revelante, com en una receta. Estas son representadas con "ol" (ordered list).
+
+* Por otro lado tenemos las listas ordenadas, que son las cuales el orden es revelante, com en una receta. Estas son representadas con **"ol"** (ordered list).
 * **Tipos de listas desordenadas:**
     ```
     <ol type=A> aparecerá letra mayuscula
