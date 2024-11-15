@@ -262,7 +262,7 @@ Los elementos de línea son aquellos que se representan en pequeñas o describen
   ```
   <strong> (fuerte negrita), <span> (rango).
   ```
-  
+
 ## 3.4 Etiquetas básicas de HTML:
 * **Encabezados:** (h1 al h2) --> Estos permiten especificar ciertas partes del contenido, son encabezados o subencabezados del contenido. **(Elementos de bloque).**
 
@@ -327,4 +327,4 @@ a más a más del atributo **"href"** el cual  indica la direccion del enlace.
 
 ## 3.8 Validador de HTML:
 En HTML, tenemos un validador externo para poder validar nuestros códigos HTML, para asi poder resolver o modificar los errores que tengamos en nuestro código. El validador se llama **W3C**
- <a href="https://validator.w3.org/">Enlace a W3C</a>
+- <a href="https://validator.w3.org/">Enlace a W3C</a>
