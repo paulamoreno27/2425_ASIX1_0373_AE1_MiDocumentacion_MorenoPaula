@@ -328,3 +328,55 @@ a más a más del atributo **"href"** el cual  indica la direccion del enlace.
 ## 3.8 Validador de HTML:
 En HTML, tenemos un validador externo para poder validar nuestros códigos HTML, para asi poder resolver o modificar los errores que tengamos en nuestro código. El validador se llama **W3C**
 - <a href="https://validator.w3.org/">Enlace a W3C</a>
+
+## 3.9 Etiquetas HTML comunes para el `<body>`:
+
+### Texto y estructura:
+- **`<p>`** – Define un párrafo de texto.  
+  Ejemplo:
+  ```html
+  <p>Este es un párrafo.</p>
+
+Desde la etiqueta <h1> hasta la <h6> son encabezados que van desde el más importante (h1) hasta el menos (h6).
+### Etiqueta: <h1>
+<h1>Título principal</h1>
+
+### Etiqueta: <h2>
+<h2>Subtítulo</h2>
+
+### Etiqueta: <br> 
+Esta hace un salto de línea, quedaria tal que asi:
+Hola<br>mundo
+
+### Etiqueta: <hr>
+Esta inserta una línea horizontal divisoria, lo cual se ve asi:
+<hr>
+
+### ¿Como comentar en HTML?
+Es muy sencillo solo debemos de utilizar 
+```
+<!-- Comentario -->
+```
+
+### Etiquetas section y article:
+**<section> y <article>:** Ayudan a estructurar el contenido de manera lógica y clara.
+
+Section --> Se utiliza para agrupar contenido relacionado dentro de una página web. Cada sección debe tener un tema claro o propósito específico. 
+
+Article --> Se usa para contenido que puede tener sentido por sí solo y puede reutilizarse o compartirse de forma independiente.
+
+**Ejemplo de section con article**:
+```
+<section>
+  <!-- Artículo con texto -->
+  <article>
+    <p>Texto del artículo</p>
+  </article>
+
+  <!-- Artículo con imagen -->
+  <article>
+    <img src="img/ejemplo.png" alt="Imagen ejemplo">
+  </article>
+</section>
+
+```
