@@ -337,21 +337,25 @@ En HTML, tenemos un validador externo para poder validar nuestros códigos HTML,
   ```html
   <p>Este es un párrafo.</p>
 
-### Etiqueta: <h1>
+### Etiqueta: ``<h1>``
 ```
 <h1>Título principal</h1>
 ```
 
-### Etiqueta: <h2>
+### Etiqueta: ``<h2>``
 ```
 <h2>Subtítulo</h2>
 ```
 
-### Etiqueta: <br> 
-Esta hace un salto de línea, quedaria tal que asi: <br>
+### Etiqueta: ``<br>`` 
+Esta hace un salto de línea <br>
+```
+Hola<br>mundo
+```
+Quedaria tal que asi:
 Hola<br>mundo
 
-### Etiqueta: <hr>
+### Etiqueta: ``<hr>``
 Esta inserta una línea horizontal divisoria:
 ```
 <hr>
