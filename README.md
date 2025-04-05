@@ -337,33 +337,40 @@ En HTML, tenemos un validador externo para poder validar nuestros códigos HTML,
   ```html
   <p>Este es un párrafo.</p>
 
-Desde la etiqueta <h1> hasta la <h6> son encabezados que van desde el más importante (h1) hasta el menos (h6).
 ### Etiqueta: <h1>
+```
 <h1>Título principal</h1>
+```
 
 ### Etiqueta: <h2>
+```
 <h2>Subtítulo</h2>
+```
 
 ### Etiqueta: <br> 
-Esta hace un salto de línea, quedaria tal que asi:
+Esta hace un salto de línea, quedaria tal que asi: <br>
 Hola<br>mundo
 
 ### Etiqueta: <hr>
-Esta inserta una línea horizontal divisoria, lo cual se ve asi:
+Esta inserta una línea horizontal divisoria:
+```
+<hr>
+```
+ lo cual se ve asi:
 <hr>
 
 ### ¿Como comentar en HTML?
-Es muy sencillo solo debemos de utilizar 
+Es muy sencillo solo debemos de utilizar. 
 ```
 <!-- Comentario -->
 ```
 
 ### Etiquetas section y article:
-**<section> y <article>:** Ayudan a estructurar el contenido de manera lógica y clara.
+**`<section>` y `<article>`:** Ayudan a estructurar el contenido de manera lógica y clara.
 
-Section --> Se utiliza para agrupar contenido relacionado dentro de una página web. Cada sección debe tener un tema claro o propósito específico. 
+**Section** --> Se utiliza para agrupar contenido relacionado dentro de una página web. Cada sección debe tener un tema claro o propósito específico. 
 
-Article --> Se usa para contenido que puede tener sentido por sí solo y puede reutilizarse o compartirse de forma independiente.
+**Article** --> Se usa para contenido que puede tener sentido por sí solo y puede reutilizarse o compartirse de forma independiente.
 
 **Ejemplo de section con article**:
 ```
