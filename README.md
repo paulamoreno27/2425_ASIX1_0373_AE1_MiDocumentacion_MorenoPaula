@@ -421,7 +421,7 @@ Es muy sencillo solo debemos de utilizar.
 - `<th>` y `<td>` comparten los mismos atributos para controlar su tamaño y alineación.
 
 
-# 4. CSS:
+# 4. Apartado CSS:
 ## 4.1. Ubicación de estilos CSS:
 Los estilos CSS pueden aplicarse de tres formas:
 
@@ -492,5 +492,58 @@ Los estilos CSS pueden aplicarse de tres formas:
 
 - **¿Qué hace?:**
   ```.parent :nth-child(4) { color: red; }``` → Aplica el color rojo al cuarto hijo directo del elemento con clase .parent, sin importar el tipo de etiqueta (puede ser ``<div>, <p>``, etc.).
+
+
+## 4.3 COMPOSICIÓN:
+### 4.3.1 Media queries:
+
+- **¿Qué son las Media Queries?**
+Las **media queries** son una característica de CSS que permite aplicar estilos distintos según las **características del dispositivo** o **tamaño de pantalla**.
+
+Sirven para hacer **diseño responsive**, adaptando el contenido automáticamente a:
+- Ordenadores
+- Tablets
+- Teléfonos móviles
+
+---
+
+- **¿Cómo funcionan?**
+
+1. **Detectan condiciones** del entorno o dispositivo:
+   - Ancho o alto de la pantalla
+   - Orientación (vertical u horizontal)
+   - Resolución
+
+2. **Aplican estilos condicionales** si se cumplen esas condiciones.
+
+---
+
+- **Ejemplo media queries:**
+
+    ```
+    En el archivo css:
+
+    /* Estilos por defecto para pantallas grandes */
+    body {
+      background-color: blue;
+      color: white;
+    }
+
+    /* Para pantallas medianas (máx. 768px) */
+    @media (max-width: 768px) {
+      body {
+        background-color: green; /* Para tablets */
+      }
+    }
+
+    /* Para pantallas pequeñas (máx. 480px) */
+    @media (max-width: 480px) {
+      body {
+        background-color: yellow; /* Para teléfonos */
+      }
+    }
+    ```
+
+### 4.3.2 Apartado diseño responsive:
 
 
