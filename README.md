@@ -439,7 +439,8 @@ Los estilos CSS pueden aplicarse de tres formas:
   ```html
   <link rel="stylesheet" href="estilos.css">
 
-## 4.2 Selectores avanzados (Atributos):
+## 4.2 Selectores avanzados:
+## 4.2.1 Selectores avanzados (Atributos):
 - Permiten seleccionar elementos en función de sus atributos.
   ```html
     img[alt] {
@@ -460,3 +461,36 @@ Los estilos CSS pueden aplicarse de tres formas:
 
   [attr*="medio"] → contiene
   ```
+
+## 4.2.2 Selectores avanzados (Hijos):
+- Seleccionan hijos directos de un elemento:
+  ```html
+  h3 > strong {
+    color: blue;
+  }
+
+ 
+- **¿Qué hace?:**
+  ```h3 > strong { color: blue; }``` → Aplica el color azul solo a los elementos ``<strong>`` que sean hijos directos de un ``<h3>``.
+
+- Puedes seleccionar un hijo específico con :nth-child(n):
+  ```html
+  .parent :nth-child(4) {
+    color: red;
+  }
+
+- Ejemplo:
+  ```
+  <div class="parent">
+    <p>Primer hijo</p>
+    <div>Segundo hijo</div>
+    <span>Tercer hijo</span>
+    <div>Cuarto hijo</div> <!-- Se aplica el estilo -->
+    <p>Quinto hijo</p>
+  </div>
+  ```
+
+- **¿Qué hace?:**
+  ```.parent :nth-child(4) { color: red; }``` → Aplica el color rojo al cuarto hijo directo del elemento con clase .parent, sin importar el tipo de etiqueta (puede ser ``<div>, <p>``, etc.).
+
+
