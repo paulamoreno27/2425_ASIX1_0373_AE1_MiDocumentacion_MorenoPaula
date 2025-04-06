@@ -391,3 +391,24 @@ Es muy sencillo solo debemos de utilizar.
 </section>
 
 ```
+
+## 4.Etiquetas de Tablas en HTML
+
+### Parte 1 de 3
+
+| **ETIQUETA**     | **Descripción**                                                                 | **Atributos comunes**                                       | **Ejemplo**                              |
+|-------------|----------------------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|
+| `<table>`   | Define el inicio de una tabla en HTML                                            | `border`: Define el grosor del borde de la tabla. <br> `width`: Especifica el ancho de la tabla.     | `<table border="1" width="100%">`        |
+| `<thead>`   | Agrupa el encabezado de la tabla, normalmente contiene las etiquetas `<th>`      | No tiene atributos específicos                               |                                          |
+| `<tbody>`   | Agrupa el cuerpo de la tabla. Útil para separar el contenido del encabezado y pie | No tiene atributos específicos                               |                                          |
+| `<tfoot>`   | Agrupa el pie de la tabla, generalmente utilizado para resumen o información final | No tiene atributos específicos                               |                                          |
+
+---
+
+### Parte 2 de 3
+
+| **ETIQUETA**   | **Descripción**                                                                                   | **Atributos comunes**                                                                                                                                          | **Ejemplo**                                      |
+|----------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| `<tr>`   | Define una fila en la tabla                                                                         | `align`: Alinea el contenido en la fila (`left`, `right`, `center`).<br>`bgcolor`: Define el color de fondo de la fila.<br>`valign`: Alineación vertical.      | `<tr align="center" bgcolor="#f0f0f0">`           |
+| `<th>`   | Define una celda de encabezado. <br>**Por defecto, el texto dentro de una `<th>` se muestra en negrita y alineado al centro.** | `colspan`: Define cuántas columnas abarca la celda.<br>`rowspan`: Define cuántas filas abarca la celda. <br> (IGUAL QUE `<td>`) | `<th colspan="2">`                                |
+| `<td>`   | Define una celda de datos dentro de una fila de la tabla                                            | `colspan`: Abarca varias columnas.<br>`rowspan`: Abarca varias filas.<br>`align`: Alinea el contenido dentro de la celda (`left`, `right`, `center`).         | `<td align="right" colspan="3">`                  |
