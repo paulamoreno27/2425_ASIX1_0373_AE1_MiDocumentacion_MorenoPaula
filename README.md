@@ -420,3 +420,43 @@ Es muy sencillo solo debemos de utilizar.
 - Usa `colspan` y `rowspan` para fusionar celdas horizontal o verticalmente.
 - `<th>` y `<td>` comparten los mismos atributos para controlar su tamaño y alineación.
 
+
+# 4. CSS:
+## 4.1. Ubicación de estilos CSS:
+Los estilos CSS pueden aplicarse de tres formas:
+
+- **Inline**: Dentro de la misma etiqueta HTML.  
+  ```html
+  <p style="color:red;">Texto</p>
+
+- **Interno**: En la cabecera del documento HTML dentro de ```<style>```.
+  ```html
+  <style>
+    p { color: red; }
+  </style>
+
+- **Externo**: En un archivo separado ```.css```, vinculado con ```<link>```.
+  ```html
+  <link rel="stylesheet" href="estilos.css">
+
+## 4.2 Selectores avanzados (Atributos):
+- Permiten seleccionar elementos en función de sus atributos.
+  ```html
+    img[alt] {
+      border: 1px solid #000000;
+    }
+
+- Se pueden usar valores específicos de atributos:
+  ```html
+    a[href="https://example.com"] {
+      color: blue;
+    }
+
+- **CSS 3 añade selectores más potentes**:
+```
+[attr^="inicio"] → empieza con
+
+[attr$="fin"] → termina con
+
+[attr*="medio"] → contiene
+```
