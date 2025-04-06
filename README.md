@@ -453,10 +453,10 @@ Los estilos CSS pueden aplicarse de tres formas:
     }
 
 - **CSS 3 añade selectores más potentes**:
-```
-[attr^="inicio"] → empieza con
+  ```
+  [attr^="inicio"] → empieza con
 
-[attr$="fin"] → termina con
+  [attr$="fin"] → termina con
 
-[attr*="medio"] → contiene
-```
+  [attr*="medio"] → contiene
+  ```
