@@ -495,7 +495,43 @@ Los estilos CSS pueden aplicarse de tres formas:
 
 
 ## 4.3 COMPOSICIÓN:
-### 4.3.1 Media queries:
+### 4.3.1 Apartado diseño responsive:
+1. COMPOSICIÓN: Diseño Responsive
+
+    El **diseño responsive** es una técnica de diseño web que permite que un sitio web se adapte automáticamente a diferentes tamaños de pantalla y dispositivos (computadoras, tabletas, teléfonos, etc.).
+
+---
+
+1. **Características principales:**
+
+    - **Flexible y adaptable**:  
+      Los elementos del diseño (texto, imágenes, menús) se ajustan automáticamente al tamaño del dispositivo.
+
+    - **Media Queries**:  
+      Se aplican estilos específicos según el ancho, alto u otras propiedades del dispositivo o pantalla.
+
+    - **Rejillas fluidas**:  
+      Los tamaños de los contenedores usan porcentajes en lugar de valores fijos, haciendo que el diseño se ajuste proporcionalmente.
+
+    - **Imágenes y fuentes escalables**:  
+      Se redimensionan para mantener proporción y legibilidad en cualquier tamaño de pantalla.
+
+---
+
+2. **Ejemplo práctico:**
+   
+   - En una **computadora**, un sitio puede mostrar **tres columnas** de contenido.
+   - En un **teléfono**, esas tres columnas se pueden reorganizar en **una sola columna vertical**, facilitando así la lectura y la navegación.
+
+---
+
+3. **Modelos visuales:**
+   
+   - **Responsive Web Design**: Parte desde pantallas grandes y se adapta a pantallas pequeñas.
+   - **Mobile First Web Design**: Comienza desde el diseño para móviles y escala hacia pantallas más grandes.
+  
+
+### 4.3.2 Media Queries:
 
 - **¿Qué son las Media Queries?**
 Las **media queries** son una característica de CSS que permite aplicar estilos distintos según las **características del dispositivo** o **tamaño de pantalla**.
@@ -543,7 +579,4 @@ Sirven para hacer **diseño responsive**, adaptando el contenido automáticament
       }
     }
     ```
-
-### 4.3.2 Apartado diseño responsive:
-
 
