@@ -420,163 +420,363 @@ Es muy sencillo solo debemos de utilizar.
 - Usa `colspan` y `rowspan` para fusionar celdas horizontal o verticalmente.
 - `<th>` y `<td>` comparten los mismos atributos para controlar su tamaño y alineación.
 
+Un formulario en HTML permite a los usuarios introducir y enviar datos a un servidor mediante diferentes tipos de campos.
 
-# 4. Apartado CSS:
-## 4.1. Ubicación de estilos CSS:
-Los estilos CSS pueden aplicarse de tres formas:
+---
 
-- **Inline**: Dentro de la misma etiqueta HTML.  
+## 5. Elementos de Formularios
+
+### `<form>`
+Define un formulario interactivo.
+
+**Atributos:**
+- `action`: URL donde se envían los datos.
+- `method`: Método de envío (GET o POST).
+- `enctype`: Tipo de codificación.
+- `target`: Dónde mostrar la respuesta.
+
+---
+
+### `<input>`
+Crea campos de entrada.
+
+**Atributos comunes:**
+- `type`: Tipo de dato (texto, radio, checkbox, etc.).
+- `id`: Identificador único.
+- `name`: Nombre para enviar el dato.
+- `value`: Valor por defecto.
+- `placeholder`: Texto de guía.
+- `required`: Campo obligatorio.
+- `disabled`: Inactivo.
+- `readonly`: Solo lectura.
+
+---
+
+### `<textarea>`
+Área para escribir texto largo.
+
+**Atributos:**
+- `name`, `id`: Identificación.
+- `rows`, `cols`: Tamaño.
+- `placeholder`, `required`, `readonly`, `disabled`: Igual que input.
+
+---
+
+### `<select>` y `<option>`
+Menú desplegable para elegir una opción.  
+`<select>` define el menú, `<option>` las opciones.
+
+---
+
+### `<fieldset>` y `<legend>`
+Agrupa campos relacionados y les da un título.
+
+---
+
+### `<button>`
+Botón para enviar, resetear o ejecutar acciones personalizadas.
+
+---
+
+# 6. CSS Hojas de Estilo en Cascada:
+
+## 6.1 ¿Qué es CSS?
+
+CSS es un lenguaje que define el diseño visual de los elementos HTML. Permite personalizar colores, fuentes, márgenes, espaciados, tamaños, posiciones y más.
+
+---
+
+## 6.2 Formas de aplicar CSS:
+
+- **En línea (inline)**  
+  Dentro del atributo `style` de una etiqueta.  
   ```html
-  <p style="color:red;">Texto</p>
+  <h1 style="color: red;">Hola</h1>
+  ```
 
-- **Interno**: En la cabecera del documento HTML dentro de ```<style>```.
+- **Interno**  
+  Dentro de la etiqueta `<style>` en el `<head>`.  
   ```html
   <style>
-    p { color: red; }
+    h1 {
+      color: red;
+    }
   </style>
+  ```
 
-- **Externo**: En un archivo separado ```.css```, vinculado con ```<link>```.
+- **Externo**  
+  En un archivo `.css` vinculado al HTML.  
   ```html
   <link rel="stylesheet" href="estilos.css">
-
-## 4.2 Selectores avanzados:
-## 4.2.1 Selectores avanzados (Atributos):
-- Permiten seleccionar elementos en función de sus atributos.
-  ```html
-    img[alt] {
-      border: 1px solid #000000;
-    }
-
-- Se pueden usar valores específicos de atributos:
-  ```html
-    a[href="https://example.com"] {
-      color: blue;
-    }
-
-- **CSS 3 añade selectores más potentes**:
-  ```
-  [attr^="inicio"] → empieza con
-
-  [attr$="fin"] → termina con
-
-  [attr*="medio"] → contiene
   ```
 
-## 4.2.2 Selectores avanzados (Hijos):
-- Seleccionan hijos directos de un elemento:
-  ```html
+---
+
+## 6.3 Selectores CSS:
+
+### Básicos:
+
+- **Universal**  
+  ```css
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ```
+
+- **Etiqueta**  
+  ```css
+  h1 {
+    color: blue;
+  }
+  ```
+
+- **Clase**  
+  ```css
+  .miClase {
+    font-size: 18px;
+  }
+  ```
+
+- **ID**  
+  ```css
+  #miId {
+    text-align: center;
+  }
+  ```
+
+- **Descendiente**  
+  ```css
+  div h1 {
+    color: green;
+  }
+  ```
+
+---
+
+### Avanzados:
+
+#### Selectores por atributos
+```css
+img[alt] {
+  border: 1px solid #000;
+}
+
+input[type="text"]     /* Igual */
+input[type^="tex"]     /* Comienza con */
+input[type$="text"]    /* Termina en */
+input[type*="ex"]      /* Contiene */
+```
+
+#### Selectores de relación
+
+- **Hijo directo**  
+  ```css
   h3 > strong {
     color: blue;
   }
+  ```
 
- 
-- **¿Qué hace?:**
-  ```h3 > strong { color: blue; }``` → Aplica el color azul solo a los elementos ``<strong>`` que sean hijos directos de un ``<h3>``.
-
-- Puedes seleccionar un hijo específico con :nth-child(n):
-  ```html
+- **Por posición**  
+  ```css
   .parent :nth-child(4) {
     color: red;
   }
-
-- Ejemplo:
-  ```
-  <div class="parent">
-    <p>Primer hijo</p>
-    <div>Segundo hijo</div>
-    <span>Tercer hijo</span>
-    <div>Cuarto hijo</div> <!-- Se aplica el estilo -->
-    <p>Quinto hijo</p>
-  </div>
   ```
 
-- **¿Qué hace?:**
-  ```.parent :nth-child(4) { color: red; }``` → Aplica el color rojo al cuarto hijo directo del elemento con clase .parent, sin importar el tipo de etiqueta (puede ser ``<div>, <p>``, etc.).
-
-
-## 4.3 COMPOSICIÓN:
-### 4.3.1 Apartado diseño responsive:
-1. COMPOSICIÓN: Diseño Responsive
-
-    El **diseño responsive** es una técnica de diseño web que permite que un sitio web se adapte automáticamente a diferentes tamaños de pantalla y dispositivos (computadoras, tabletas, teléfonos, etc.).
-
----
-
-1. **Características principales:**
-
-    - **Flexible y adaptable**:  
-      Los elementos del diseño (texto, imágenes, menús) se ajustan automáticamente al tamaño del dispositivo.
-
-    - **Media Queries**:  
-      Se aplican estilos específicos según el ancho, alto u otras propiedades del dispositivo o pantalla.
-
-    - **Rejillas fluidas**:  
-      Los tamaños de los contenedores usan porcentajes en lugar de valores fijos, haciendo que el diseño se ajuste proporcionalmente.
-
-    - **Imágenes y fuentes escalables**:  
-      Se redimensionan para mantener proporción y legibilidad en cualquier tamaño de pantalla.
+**Ejemplo visual:**
+```html
+<div class="parent">
+  <p>1</p>
+  <div>2</div>
+  <span>3</span>
+  <div>4</div> <!-- Este será rojo -->
+  <p>5</p>
+</div>
+```
 
 ---
 
-2. **Ejemplo práctico:**
-   
-   - En una **computadora**, un sitio puede mostrar **tres columnas** de contenido.
-   - En un **teléfono**, esas tres columnas se pueden reorganizar en **una sola columna vertical**, facilitando así la lectura y la navegación.
+## 6.4 Propiedades comunes
+
+### Colores y fondos:
+```css
+color: red;
+background-color: yellow;
+```
+
+### Texto:
+```css
+font-size: 16px;
+font-family: Arial;
+text-align: center;
+font-weight: bold;
+```
+
+### Caja y espaciado:
+```css
+margin: 10px;
+padding: 5px;
+border: 1px solid black;
+```
+
+### Display y posición:
+```css
+display: flex;
+position: relative;
+```
 
 ---
 
-3. **Modelos visuales:**
-   
-   - **Responsive Web Design**: Parte desde pantallas grandes y se adapta a pantallas pequeñas.
-   - **Mobile First Web Design**: Comienza desde el diseño para móviles y escala hacia pantallas más grandes.
-  
+## 6.5 Modelo de Caja (Box Model)
 
-### 4.3.2 Media Queries:
+Representa cómo se calcula el espacio de un elemento:
 
-- **¿Qué son las Media Queries?**
-Las **media queries** son una característica de CSS que permite aplicar estilos distintos según las **características del dispositivo** o **tamaño de pantalla**.
+- **Contenido**: Texto o imagen.
+- **Padding**: Espacio interior.
+- **Border**: Borde exterior del padding.
+- **Margin**: Separación externa.
 
-Sirven para hacer **diseño responsive**, adaptando el contenido automáticamente a:
-- Ordenadores
-- Tablets
-- Teléfonos móviles
-
----
-
-- **¿Cómo funcionan?**
-
-1. **Detectan condiciones** del entorno o dispositivo:
-   - Ancho o alto de la pantalla
-   - Orientación (vertical u horizontal)
-   - Resolución
-
-2. **Aplican estilos condicionales** si se cumplen esas condiciones.
+```css
+.elemento {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid black;
+}
+```
 
 ---
 
-- **Ejemplo media queries:**
+## 6.6 Jerarquía HTML y CSS
 
-    ```
-    En el archivo css:
+El CSS usa la estructura del HTML para aplicar estilos según la posición y relación de los elementos:
 
-    /* Estilos por defecto para pantallas grandes */
-    body {
-      background-color: blue;
-      color: white;
-    }
+```html
+<div> <!-- Padre -->
+  <h1>Hola</h1> <!-- Hijo -->
+</div>
+```
 
-    /* Para pantallas medianas (máx. 768px) */
-    @media (max-width: 768px) {
-      body {
-        background-color: green; /* Para tablets */
-      }
-    }
 
-    /* Para pantallas pequeñas (máx. 480px) */
-    @media (max-width: 480px) {
-      body {
-        background-color: yellow; /* Para teléfonos */
-      }
-    }
-    ```
+# 7. Diseño Web Adaptativo (Responsive)
+
+## 7.1 ¿Qué es el diseño responsive?
+
+Es una técnica que permite que un sitio web se ajuste automáticamente a distintos tamaños de pantalla, garantizando buena experiencia en móviles, tablets y computadoras.
+
+---
+
+## 7.2 Media Queries
+
+Las media queries son condiciones en CSS que activan estilos solo si se cumplen ciertos requisitos, como el ancho de pantalla.
+
+```css
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+
+---
+
+## 7.3 Columnas flexibles (estructura adaptable)
+
+Diseños basados en columnas que se ajustan al ancho de la pantalla:
+
+```css
+.column-1 { width: 100%; float: left; }
+.column-2 { width: 50%; float: left; }
+.column-3 { width: 33.33%; float: left; }
+.column-4 { width: 25%; float: left; }
+.column-5 { width: 20%; float: left; }
+.column-6 { width: 16.66%; float: left; }
+.column-75 { width: 75%; float: left; }
+
+@media only screen and (max-width: 600px) {
+  .column-2, .column-3 { width: 100%; }
+  .column-4 { width: 50%; }
+}
+```
+
+---
+
+## 7.4 Detección de orientación de pantalla
+
+```css
+@media (orientation: landscape) {
+  /* Estilos para pantallas en horizontal */
+}
+```
+
+---
+
+## 7.5 Media Queries con múltiples condiciones
+
+Puedes combinar condiciones para controlar mejor el comportamiento:
+
+```css
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Estilos para móviles pequeños */
+}
+```
+
+---
+
+## 7.6 Propiedades comunes en media queries
+
+- `width` / `height`: Tamaño visible del navegador
+- `device-width` / `device-height`: Tamaño del dispositivo
+- `orientation`: Vertical (`portrait`) u horizontal (`landscape`)
+- `resolution`: Calidad de pantalla (DPI o PPI)
+- `hover`, `pointer`, `aspect-ratio`: Capacidad táctil, tipo de puntero o proporción
+
+---
+
+## 7.7 Enfoque Mobile First
+
+Se comienza con estilos para móviles y luego se adaptan a pantallas grandes.
+
+```css
+/* Estilos por defecto: móvil */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Para pantallas mayores a 768px */
+@media only screen and (min-width: 768px) {
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+```
+
+---
+
+## 7.8 Metaetiqueta Viewport
+
+Debe colocarse en el `<head>` del HTML para controlar cómo se escala la web en distintos dispositivos:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### Atributos comunes
+
+| Atributo         | Valor                         | Descripción                             |
+|------------------|-------------------------------|-----------------------------------------|
+| width            | `device-width` o número       | Define el ancho visible                 |
+| height           | `device-height` o número      | Altura visible                          |
+| initial-scale    | Número (ej. 1.0)              | Nivel inicial de zoom                   |
+| user-scalable    | `yes` / `no`                  | Permite o impide hacer zoom             |
+| minimum-scale    | Número                        | Mínimo nivel de zoom                    |
 
